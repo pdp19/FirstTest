@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [pomExample suite]">
+  <listeners>
+    <listener class-name="com.app.module.ExtendReportListner.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Execute All the test cases(failed)">
+    <classes>
+      <class name="com.app.module.testCases.HomePageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="checkLoginTest"/>
+          <include name="setUp"/>
+          <include name="closePopup"/>
+        </methods>
+      </class> <!-- com.app.module.testCases.HomePageTest -->
+    </classes>
+  </test> <!-- Execute All the test cases(failed) -->
+</suite> <!-- Failed suite [pomExample suite] -->
